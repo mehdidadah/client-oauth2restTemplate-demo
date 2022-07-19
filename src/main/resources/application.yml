@@ -1,0 +1,22 @@
+server:
+  port: 9001
+
+logging:
+  level:
+    root: info
+
+spring:
+  application:
+    name: DemoOauth2RestTemplate
+
+#  Exemple ...
+api:
+  baseUrl: "https://test.salesforce.com/"
+  serviceUrl: "${api.baseUrl}/services/..."
+  token-uri: "${api.baseUrl}/services/oauth2/token"
+  client-id: ${API_DEMO_CLIENT_ID}
+  password: ${API_DEMO_PASSWORD}
+  username: ${API_DEMO_USERNAME}
+  client-secret: ${API_DEMO_CLIENT_SECRET}
+  registration-id: "salesforce"
+
